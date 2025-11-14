@@ -37,17 +37,17 @@
             // lstRequests
             // 
             this.lstRequests.FormattingEnabled = true;
-            this.lstRequests.Location = new System.Drawing.Point(13, 13);
+            this.lstRequests.Location = new System.Drawing.Point(12, 12);
             this.lstRequests.Name = "lstRequests";
-            this.lstRequests.Size = new System.Drawing.Size(190, 95);
+            this.lstRequests.Size = new System.Drawing.Size(181, 95);
             this.lstRequests.TabIndex = 0;
             // 
             // dgvRequestDetails
             // 
             this.dgvRequestDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRequestDetails.Location = new System.Drawing.Point(12, 124);
+            this.dgvRequestDetails.Location = new System.Drawing.Point(13, 124);
             this.dgvRequestDetails.Name = "dgvRequestDetails";
-            this.dgvRequestDetails.Size = new System.Drawing.Size(396, 286);
+            this.dgvRequestDetails.Size = new System.Drawing.Size(421, 286);
             this.dgvRequestDetails.TabIndex = 1;
             // 
             // lblInfo
@@ -69,6 +69,7 @@
             this.Controls.Add(this.lstRequests);
             this.Name = "FormRequest";
             this.Text = "FormRequest";
+            this.Load += new System.EventHandler(this.FormRequest_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvRequestDetails)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

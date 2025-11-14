@@ -16,5 +16,10 @@ namespace Hospital
         {
             InitializeComponent();
         }
+
+        private void FormRequest_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
