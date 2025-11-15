@@ -1,12 +1,23 @@
-﻿using System;
+﻿using Hospital.Lib.Interfaces;
+using Hospital.Lib.Models;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Hospital.Lib.Services
 {
-    internal class RequestService
+    public class RequestService
     {
+        private readonly IRequestRepository _repository;
+        public RequestService(IRequestRepository repository)
+        {
+            _repository = repository;
+        }
+        public List<RequestView> GetAllRequests()
+        {
+            return _repository.GetAllRequests();
+        }
+        public List<RequestView> GetSelectedRequest(string requestId)
+        {
+            return _repository.GetRequestsById(requestId);
+        }
     }
 }
