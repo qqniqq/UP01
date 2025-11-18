@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -87,6 +88,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Hospital.Data\Hospital.Data.csproj">
+      <Project>{5dc7c987-d75a-43e8-a65f-9aecb9666358}</Project>
+      <Name>Hospital.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="Hospital.Lib\Hospital.Lib.csproj">
+      <Project>{9c1f7189-d30c-44f7-bf2f-a071dcaf9ffb}</Project>
+      <Name>Hospital.Lib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

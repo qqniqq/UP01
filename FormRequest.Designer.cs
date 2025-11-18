@@ -36,34 +36,42 @@
             // 
             // lstRequests
             // 
+            this.lstRequests.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lstRequests.FormattingEnabled = true;
-            this.lstRequests.Location = new System.Drawing.Point(12, 12);
+            this.lstRequests.ItemHeight = 19;
+            this.lstRequests.Location = new System.Drawing.Point(12, 44);
             this.lstRequests.Name = "lstRequests";
-            this.lstRequests.Size = new System.Drawing.Size(181, 95);
+            this.lstRequests.Size = new System.Drawing.Size(181, 80);
             this.lstRequests.TabIndex = 0;
             // 
             // dgvRequestDetails
             // 
+            this.dgvRequestDetails.AllowUserToAddRows = false;
+            this.dgvRequestDetails.AllowUserToDeleteRows = false;
+            this.dgvRequestDetails.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvRequestDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRequestDetails.Location = new System.Drawing.Point(13, 124);
+            this.dgvRequestDetails.Location = new System.Drawing.Point(227, 44);
             this.dgvRequestDetails.Name = "dgvRequestDetails";
-            this.dgvRequestDetails.Size = new System.Drawing.Size(421, 286);
+            this.dgvRequestDetails.ReadOnly = true;
+            this.dgvRequestDetails.Size = new System.Drawing.Size(177, 178);
             this.dgvRequestDetails.TabIndex = 1;
             // 
             // lblInfo
             // 
             this.lblInfo.AutoSize = true;
-            this.lblInfo.Location = new System.Drawing.Point(449, 124);
+            this.lblInfo.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblInfo.Location = new System.Drawing.Point(126, 253);
             this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(35, 13);
+            this.lblInfo.Size = new System.Drawing.Size(53, 21);
             this.lblInfo.TabIndex = 2;
             this.lblInfo.Text = "label1";
+            this.lblInfo.Click += new System.EventHandler(this.lblInfo_Click);
             // 
             // FormRequest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(575, 422);
+            this.ClientSize = new System.Drawing.Size(435, 305);
             this.Controls.Add(this.lblInfo);
             this.Controls.Add(this.dgvRequestDetails);
             this.Controls.Add(this.lstRequests);

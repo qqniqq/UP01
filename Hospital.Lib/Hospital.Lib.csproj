@@ -46,11 +46,5 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\RequestService.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Hospital.csproj">
-      <Project>{7ecd1ba9-36eb-4cea-8914-1da5272f8647}</Project>
-      <Name>Hospital</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

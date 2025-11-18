@@ -128,6 +128,7 @@
             this.Controls.Add(this.label1);
             this.Name = "UIForm";
             this.Text = "Hospital";
+            this.Load += new System.EventHandler(this.UIForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

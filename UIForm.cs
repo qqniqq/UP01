@@ -16,5 +16,10 @@ namespace Hospital
         {
             InitializeComponent();
         }
+
+        private void UIForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
